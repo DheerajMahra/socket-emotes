@@ -1,0 +1,10 @@
+#emote-palette {
+  display: flex;
+  justify-content: space-around;
+  width: 72rem;
+  font-size: 8rem;
+  background-color: #f2f2f23f;
+  border-radius: 10rem;
+  z-index: 2;
+  cursor: pointer;
+}

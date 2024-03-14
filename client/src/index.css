@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+	-webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+	background: none;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+@media (max-width: 425px) {
+	html {
+		font-size: 30%;
+	}
+}
+
+body {
+	box-sizing: border-box;
+	font-weight: 400;
+	line-height: 1.7;
+	overflow: hidden;
+	background-color: #070F2B;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes bubble {
+  from {
+    bottom: -15%;
+  }
+  to {
+    bottom: 115%;
+  }
+}
