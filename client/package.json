@@ -2,8 +2,10 @@
   "name": "@socket-emotes/client",
   "private": true,
   "version": "1.0.0",
+  "author": "Dheeraj Mahra<dheerajmahra873@gmail.com>",
+  "repository": "https://github.com/DheerajMahra/socket-emotes",
   "scripts": {
-    "dev": "rsbuild dev --open",
+    "dev": "rsbuild dev --open --port=3000",
     "build": "rsbuild build",
     "preview": "rsbuild preview"
   },
