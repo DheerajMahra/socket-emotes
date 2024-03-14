@@ -16,7 +16,7 @@ export const EmoteContextProvider = ({ children }: EmoteContextProviderProps) =>
   const [emoteQueue, setEmoteQueue] = useState<EmoteBubbleType[]>([]);
 
   const pushEmote = (emote: EmoteBubbleType) => {
-    setEmoteQueue([...emoteQueue, emote]);
+    setEmoteQueue(ps => [...ps, emote]);
   }
   const value: EmoteContextType = { emoteQueue, pushEmote };
 

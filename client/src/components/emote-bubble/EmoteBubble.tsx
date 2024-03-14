@@ -2,7 +2,7 @@ import { Emote } from 'components/emote';
 import { useUnmountNode } from 'hooks';
 import { EmoteBubbleType } from 'types';
 
-interface EmoteBubbleProps extends EmoteBubbleType {};
+type EmoteBubbleProps = Omit<EmoteBubbleType, "id">;
 
 export const EmoteBubble = ({ emote, size, left }: EmoteBubbleProps) => {
   const canUnmount = useUnmountNode();
