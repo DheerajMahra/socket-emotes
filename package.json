@@ -6,12 +6,10 @@
   "repository": "https://github.com/DheerajMahra/socket-emotes.git",
   "author": "Dheeraj Mahra <dheeraj.mahra@cars24.com>",
   "scripts": {
-    "start": "concurrently yarn:start-*",
-    "start-client": "cd ./client && yarn dev",
-    "start-server": "cd ./server && yarn start",
-    "install": "concurrently yarn:install-*",
-    "install-client": "cd ./client && yarn --frozen-lockfile install",
-    "install-server": "cd ./server && yarn --frozen-lockfile install"
+    "install": "concurrently \"cd client && yarn --frozen-lockfile install\" \"cd server && yarn --frozen-lockfile install\"",
+    "start": "concurrently \"cd client && yarn dev\" \"cd server && yarn start\"",
+    "build": "concurrently \"cd server && yarn build\" \"cd client && yarn build\"",
+    "start-server": "node server/dist/index.js"
   },
   "license": "MIT",
   "dependencies": {
