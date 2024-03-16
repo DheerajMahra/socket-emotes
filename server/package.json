@@ -6,7 +6,8 @@
   "author": "Dheeraj Mahra<dheerajmahra873@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "cd ./src && nodemon index.ts"
+    "start": "cd ./src && nodemon index.ts",
+    "build": "tsc"
   },
   "dependencies": {
     "@types/express": "^4.17.21",
